@@ -25,7 +25,7 @@ public struct Package {
     let licenseUrl: URL?
 }
 
-struct PackageKit {
+public struct PackageKit {
     /**
     Get packages from your `Package.resolved` file.
 
