@@ -33,3 +33,5 @@ struct ContentView: View {
     }
 }
 ```
+## Limitations
+Right now, PackageKit only supports Github Swift Packages, but more git hosting software support is in the near future.
