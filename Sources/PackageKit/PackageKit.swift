@@ -19,10 +19,11 @@ struct PackageDecoder: Codable {
     let pins: [RawPackage]
 }
 
-public struct Package {
-    let name: String
-    let location: String
-    let licenseUrl: URL?
+public struct Package: Identifiable {
+    public let id = UUID()
+    public let name: String
+    public let location: String
+    public let licenseUrl: URL?
 }
 
 public struct PackageKit {
