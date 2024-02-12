@@ -24,6 +24,12 @@ public struct Package: Identifiable {
     public let name: String
     public let location: String
     public let licenseUrl: URL?
+    
+    public init(name: String, location: String, licenseUrl: URL?) {
+        self.name = name
+        self.location = location
+        self.licenseUrl = licenseUrl
+    }
 }
 
 public struct PackageKit {
